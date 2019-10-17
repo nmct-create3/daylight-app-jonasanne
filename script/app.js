@@ -14,6 +14,9 @@ function _parseMillisecondsIntoReadableTime(timestamp) {
 }
 
 // 5 TODO: maak updateSun functie
+function UpdateSun() {
+	string key = "http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=HIERKOMTJOUWAPPID&units=metric&lang=nl&cnt=1"
+}
 
 // 4 Zet de zon op de juiste plaats en zorg ervoor dat dit iedere minuut gebeurt.
 let placeSunAndStartMoving = (totalMinutes, sunrise) => {
@@ -45,7 +48,7 @@ let getAPI = (lat, lon) => {
 	// Als dat gelukt is, gaan we naar onze showResult functie.
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	// 1 We will query the API with longitude and latitude.
 	getAPI(50.8027841, 3.2097454);
 });
